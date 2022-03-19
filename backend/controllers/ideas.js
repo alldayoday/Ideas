@@ -9,6 +9,7 @@ const index = (req, res) => {
     console.log(res.json(ideas))
     res.json(ideas)
   })
+  .catch(error => res.json(error))
 }
 
 const create = (req, res) => {
